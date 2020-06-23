@@ -1,0 +1,98 @@
+   /* Global Variables */
+   * {
+       box-sizing: border-box;
+   }
+
+   :root {
+       --VeryDarkBlue: hsl(243, 87%, 12%);
+       --Desaturated-Blue: hsl(238, 22%, 44%);
+       --BrightBlue: hsl(224, 93%, 58%);
+       --ModerateCyan: hsl(170, 45%, 43%);
+       --LightGrayishBlue: hsl(240, 75%, 98%);
+       --LightGray: hsl(0, 0%, 75%);
+   }
+
+   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+   body {
+       font-family: 'Open Sans', sans-serif;
+       font-weight: 400;
+       margin: 0;
+   }
+
+   header {
+       display: flex;
+       justify-content: space-between;
+   }
+
+   li {
+       list-style: none;
+       display: inline-block;
+
+   }
+
+   li+li {
+       margin: 1em;
+   }
+
+   header a {
+       margin-top: 1em;
+   }
+
+   a {
+       text-decoration: none;
+   }
+
+   .logo {
+       margin-left: 2em;
+   }
+
+   /* Mobile 1st */
+   body {
+       overflow-x: hidden;
+   }
+
+   .hero--img {
+       margin: 4em;
+       width: 90%;
+   }
+
+   /* How to get the headline effect "Funnel look" */
+
+   .hero--des {
+       margin: 0 auto;
+       padding: 1em;
+   }
+
+   h1 {
+       font-family: 'Raleway', sans-serif;
+       text-align: center;
+       line-height: 1.2em;
+   }
+
+   .hero--copy {
+       text-align: center;
+       line-height: 1.2em;
+       color: var(--LightGray);
+
+   }
+
+
+   .hero--headline {}
+
+   .hero--input {
+       width: 100%;
+
+   }
+
+   @media(min-width: 375px) {}
+
+   .attribution {
+       font-size: 11px;
+       text-align: center;
+   }
+
+   .attribution a {
+       color: hsl(228, 45%, 44%);
+   }
