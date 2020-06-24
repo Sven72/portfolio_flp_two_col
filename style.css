@@ -1,98 +1,247 @@
-   /* Global Variables */
-   * {
-       box-sizing: border-box;
-   }
+/* Global Variables */
 
-   :root {
-       --VeryDarkBlue: hsl(243, 87%, 12%);
-       --Desaturated-Blue: hsl(238, 22%, 44%);
-       --BrightBlue: hsl(224, 93%, 58%);
-       --ModerateCyan: hsl(170, 45%, 43%);
-       --LightGrayishBlue: hsl(240, 75%, 98%);
-       --LightGray: hsl(0, 0%, 75%);
-   }
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+}
 
-   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
-   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  --BrightBlue: hsl(224, 93%, 58%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --LightGray: hsl(0, 0%, 75%);
+}
 
-   body {
-       font-family: 'Open Sans', sans-serif;
-       font-weight: 400;
-       margin: 0;
-   }
+body {
+  font-weight: 400;
+  margin: 0;
+}
 
-   header {
-       display: flex;
-       justify-content: space-between;
-   }
+header {
+  display: flex;
+  justify-content: space-between;
+}
 
-   li {
-       list-style: none;
-       display: inline-block;
+li {
+  list-style: none;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+}
 
-   }
+li + li {
+  margin: 1em;
+}
 
-   li+li {
-       margin: 1em;
-   }
+header a {
+  margin-top: 1em;
+}
 
-   header a {
-       margin-top: 1em;
-   }
+a {
+  text-decoration: none;
+  color: var(--Desaturated-Blue);
+}
 
-   a {
-       text-decoration: none;
-   }
+.logo {
+  margin-left: 2em;
+}
 
-   .logo {
-       margin-left: 2em;
-   }
+/* Mobile 1st */
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
 
-   /* Mobile 1st */
-   body {
-       overflow-x: hidden;
-   }
+.hero--img {
+  margin: 4em auto;
+  width: 90%;
+  display: block;
+}
 
-   .hero--img {
-       margin: 4em;
-       width: 90%;
-   }
+/* How to get the headline effect "Funnel look" */
 
-   /* How to get the headline effect "Funnel look" */
+.hero--des {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  margin-top: -10%;
+}
 
-   .hero--des {
-       margin: 0 auto;
-       padding: 1em;
-   }
+h1 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  line-height: 1.2em;
+}
 
-   h1 {
-       font-family: 'Raleway', sans-serif;
-       text-align: center;
-       line-height: 1.2em;
-   }
+.hero--copy {
+  text-align: center;
+  line-height: 1.2em;
+  color: var(--LightGray);
+}
 
-   .hero--copy {
-       text-align: center;
-       line-height: 1.2em;
-       color: var(--LightGray);
+.hero--input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
 
-   }
+/* How to make the button as big as input field? */
 
+.hero--btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--BrightBlue);
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  border: 1px solid var(--BrightBlue);
+  font-size: 1.5em;
+  margin-bottom: 3em;
+}
 
-   .hero--headline {}
+/* How to get the background effect */
 
-   .hero--input {
-       width: 100%;
+.color-box--mobile {
+  padding-top: 2em;
+  padding-bottom: 7em;
+  background-color: var(--LightGrayishBlue);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
 
-   }
+.section2--content {
+  margin-top: 2em;
+}
 
-   @media(min-width: 375px) {}
+.section2--img {
+  display: block;
 
-   .attribution {
-       font-size: 11px;
-       text-align: center;
-   }
+  width: 90%;
+  margin: 7em auto;
+}
 
-   .attribution a {
-       color: hsl(228, 45%, 44%);
-   }
+.section2--headline {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: var(--VeryDarkBlue);
+}
+
+.section2--copy {
+  text-align: left;
+}
+
+/* How to make this link look less messed up? */
+.section2--link {
+  color: var(--ModerateCyan);
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.section2--link span img {
+  width: 20px;
+}
+
+.section2--testimonial {
+  width: 75%;
+  background-color: #fff;
+}
+.section2--link-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+
+.section2--testimonial-box {
+  background-color: #ffff;
+  padding: 2em;
+  box-shadow: 1px 2px 10px var(--LightGray);
+  border-radius: 10px;
+}
+
+.section2--icon-img {
+  display: block;
+  width: 30px;
+}
+
+/* Why is my testimonial footer messed up? */
+.section2--testimonial-img {
+  border-radius: 50%;
+  width: 30px;
+  align-self: flex-start;
+}
+
+.section2--testimonial-name > span {
+  font-weight: 700;
+}
+
+.section2--testimonial-name {
+  font-size: rem;
+}
+
+.section2-testimonial__flex {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: baseline; */
+}
+
+.section3 {
+  background-color: var(--Desaturated-Blue);
+  padding: 3em 3em;
+}
+
+.section3--headline {
+  color: #fff;
+  text-align: center;
+}
+
+.section3--copy {
+  color: #fff;
+  text-align: center;
+}
+
+.section3--input,
+.section3--btn {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.section3--btn {
+  color: #fff;
+  font-size: 1rem;
+  background-color: var(--BrightBlue);
+  border: 1px solid var(--BrightBlue);
+}
+
+.footer {
+  background-color: var(--VeryDarkBlue);
+  color: #fff;
+}
+
+.footer li {
+  color: #fff;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 375px) {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
