@@ -276,7 +276,10 @@ h1 {
   h1,
   h2,
   .section2--headline,
+  .hero--copy,
+  .section3--headline,
   .section2--link,
+  .section3--copy,
   p {
     text-align: left;
   }
@@ -304,6 +307,31 @@ h1 {
   }
   .section2--testimonial-box {
     width: 70%;
+  }
+  .section3 {
+    display: flex;
+  }
+
+  .section3--input-elements {
+    width: 100%;
+  }
+
+  .section3--info {
+    /* text-align: left; */
+    width: 50%;
+  }
+
+  .section3--btn {
+    width: 30%;
+    cursor: pointer;
+  }
+  .footer--essentials {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer--navigation {
+    display: flex;
+    flex-direction: row;
   }
 }
 
